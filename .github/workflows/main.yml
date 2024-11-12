@@ -7,7 +7,7 @@ on:
   push:
     branches: [ master ]
     paths:
-      - 'BAS-BanksUtility.csproj'
+      - 'BASBanksUtility.csproj'
 
 jobs:
   build:
@@ -18,15 +18,15 @@ jobs:
       run : ls -l -R
       
     # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
-    - name: Change base-tag in index.html from / to BankServiceFor1C8
-      run: sed -i 's/<base href="\/" \/>/<base href="\/BAS-BanksUtility\/" \/>/g' wwwroot/index.html
+    - name: Change base-tag in index.html from / to BASBanksUtility
+      run: sed -i 's/<base href="\/" \/>/<base href="\/BASBanksUtility\/" \/>/g' wwwroot/index.html
 
     - name: Publish app
       run: dotnet publish -c Release
       
     # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
-    #- name: Change base-tag in index.html from / to BAS-BanksUtility
-    #  run: sed -i 's/<base href="\/" \/>/<base href="\/BAS-BanksUtility\/" \/>/g' ${{ env.PUBLISH_DIR }}/index.html
+    #- name: Change base-tag in index.html from / to BASBanksUtility
+    #  run: sed -i 's/<base href="\/" \/>/<base href="\/BASBanksUtility\/" \/>/g' ${{ env.PUBLISH_DIR }}/index.html
     
     # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
     #- name: Fix service-worker-assets.js hashes
