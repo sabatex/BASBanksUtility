@@ -1,4 +1,4 @@
-﻿namespace BankServiceFor1C8.Models
+﻿namespace BASBanksUtility.Models
 {
     public class ResultTask
     {

@@ -12,7 +12,7 @@ using Microsoft.JSInterop;
 using Sabatex.RadzenBlazor;
 
 
-namespace BankServiceFor1C8
+namespace BASBanksUtility
 {
     public class Program
     {
