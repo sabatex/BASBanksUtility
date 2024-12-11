@@ -1,4 +1,4 @@
-﻿namespace BASBanksUtility.Models
+﻿namespace AnyBanksUA.Models
 {
     public class ResultTask
     {
