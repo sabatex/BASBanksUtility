@@ -14,7 +14,7 @@
 
   
    <ItemGroup>
-    <PackageReference Include="sabatex.Extensions" Version="6.0.1"></PackageReference>
+    <PackageReference Include="sabatex.Extensions" Version="6.0.3"></PackageReference>
   </ItemGroup>
   
 </Project>
